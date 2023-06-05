@@ -4,8 +4,8 @@ const cardSchema = new mongoose.Schema({
   name: String,
   imgUrl: String,
   age: { type: Number, min: 18, max: 65 },
-  distance: Number,
-
+  location: String,
+  distance: Number
 })
 
 const Card = mongoose.model('cards', cardSchema)
